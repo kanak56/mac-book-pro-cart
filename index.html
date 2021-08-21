@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -26,48 +25,65 @@
                     GPU, and
                     16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse
                     Magic Keyboard-Us English</p>
+                <!-- Memory Part -->
                 <p class="font-bold mt-14">Memory</p>
-                <div class="mt-2"><button class="btn">8GB unified
-                        memory</button> <button class="ml-4 btn">16GB
+                <div class="mt-2"><button id="memory-selector1" class="bg-blue-300 p-1 rounded">8GB unified
+                        memory</button>
+                    <button id="memory-selector2" class="ml-4 bg-blue-300 p-1 rounded">16GB
                         unified memory</button>
                 </div>
+                <!-- Storage Part -->
                 <p class="font-bold mt-14">Storage</p>
-                <div class="mt-2"><button class="btn">256GB SSD storage</button> <button class="ml-4 btn">512GB SSD
-                        storage</button> <button class="ml-4 btn">1TB SSD
+                <div class="mt-2"><button id="storage-selector1" class="bg-blue-300 p-1 rounded">256GB SSD
+                        storage</button> <button id="storage-selector2" class="ml-4 bg-blue-300 p-1 rounded">512GB SSD
+                        storage</button> <button id="storage-selector3" class="ml-4 bg-blue-300 p-1 rounded">1TB SSD
                         stroage</button>
                 </div>
+                <!-- Delivery option part -->
                 <p class="font-bold mt-14">Choose your delivery option</p>
-                <div class="mt-2"><button class="btn">Friday,Aug 25 FREE Prime Delivery</button> <button
-                        class="ml-4 btn">Firday,Aug 21 Delivery Charge $20</button>
+                <div class="mt-2"><button id="delivery-selector1" class="bg-blue-300 p-1 rounded">Friday,Aug 25 FREE
+                        Prime Delivery</button>
+                    <button id="delivery-selector2" class="ml-4 bg-blue-300 p-1 rounded">Firday,Aug 21 Delivery Charge
+                        $20</button>
                 </div>
 
                 <!-- price calculation of Imac -->
                 <div class="font-bold mt-14">
-                    <p class="font-bold">Best Price<span class="ml-24">$<span>1299</span> </span></p>
+                    <p class="font-bold">Best Price<span class="ml-24">$<span id="best-price">1299</span> </span></p>
                     <hr class="w-56">
-                    <p class="font-bold">Extra Memory Cost<span class="ml-10">$<span>0</span> </span></p>
+                    <p class="font-bold">Extra Memory Cost<span class="ml-10">$<span id="extra-memory-cost">0</span>
+                        </span></p>
                     <hr class="w-56">
-                    <p class="font-bold">Extra Storage Cost<span class="ml-12">$<span>0</span> </span></p>
+                    <p class="font-bold">Extra Storage Cost<span class="ml-12">$<span id="extra-storage-cost">0</span>
+                        </span></p>
                     <hr class="w-56">
-                    <p class="font-bold">Delivery Charge<span class="ml-16">$<span>0</span> </span></p>
+                    <p class="font-bold">Delivery Charge<span class="ml-16">$<span id="delivery-cost">0</span> </span>
+                    </p>
                     <hr class="w-56">
 
-                    <p class=" font-bold">Total Price<span class="ml-24">$<span>1299</span> </span></p>
+                    <p class=" font-bold">Total Price<span class="ml-24">$<span id="sub-total">1299</span> </span></p>
                     <hr class="w-56">
                 </div>
 
+                <!-- This is extra part -->
                 <div class="mt-4">
-                    <p class="font-bold ">Add Promo Code</p>
-                    <input class="bg-white-300 p-1 rounded" type="text" placeholder="Enter The Promo Code"><button
+                    <p class="font-bold">Add Promo Code</p>
+                    <input id="promo-input" class="bg-white-300 p-1 rounded" type="text"
+                        placeholder="Enter The Promo Code"><button id="promo-submit"
                         class="bg-gradient-to-r from-green-400 to-blue-500 p-1 rounded-lg"><b>Submit</b></button>
                 </div>
             </div>
         </section>
+        <hr>
+
     </main>
-    <hr>
+
+    <!-- This is extra part -->
     <footer>
-        <h1 class="text-4xl text-center font-semibold">Total:$<span>1299</span></h1>
+        <h1 class="text-4xl text-center font-semibold">Total:$<span id="total">1299</span></h1>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
